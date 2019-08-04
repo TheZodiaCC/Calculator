@@ -4,7 +4,6 @@ import math
 class Calculator:
 
     def __init__(self, root):
-        #root.geometry("306x163")
         root.resizable(width=False, height=False)
         root.title("PyCalc")
         self.widgets()
@@ -68,7 +67,6 @@ class Calculator:
 
         else:
             self.calcdisplay.insert(len(self.calcdisplay.get()), txt)
-            #print(self.calcdisplay.get())
 
     def clear_display(self):
         self.calcdisplay.delete(0, tk.END)
